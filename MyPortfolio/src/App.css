@@ -1,0 +1,677 @@
+html,
+body,
+#root,
+.App {
+  width: 100%;
+  height: 100%;
+  background: rgb(255,255,255);
+background: linear-gradient(185deg, rgba(255,255,255,1) 8%, rgba(0,0,0,1) 8%, rgba(0,0,0,1) 91%, rgba(255,255,255,1) 91%);
+
+  overflow: hidden;
+}
+
+html {
+  /* background: url(img/apple.jpg) no-repeat; */
+  /* background: url(img/bubbles.png) no-repeat; */
+  background: black;
+  background-size: cover;
+  background-position: center;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+/* 
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+#mainContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+
+.bg-6 {
+  position: absolute;
+  top: 35px;
+}
+
+.bg-5 {
+  top: 35px;
+}
+
+.glitch2 {
+  font-size: 31px;
+  position: relative;
+  margin: 0 auto;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  display: inline-block;
+  border: none;
+  padding: 0.5em 0em;
+  position: absolute;
+  top: 150px;
+  left: 281px;
+  width: 6em;
+  color: white;
+  /* background: linear-gradient(64deg,
+      rgb(164 173 192),
+      rgb(174 183 202)) !important; */
+  background-color: black;
+}
+
+.glitch2:before {
+  content: attr(data-text);
+  position: absolute;
+  left: 1px;
+  top: 13px;
+  padding-left: 5px;
+  color: white;
+  /* background: linear-gradient(64deg,
+      rgb(164 173 192),
+      rgb(174 183 202)) !important; */
+  background-color: black;
+  overflow: hidden;
+  clip: rect(0, 900px, 0, 0);
+  animation: noise-anim-2 4s infinite linear alternate-reverse;
+}
+
+.glitch2:after {
+  content: attr(data-text);
+  position: absolute;
+  left: 2px;
+  top: 12px;
+  color: white;
+  /* background: linear-gradient(64deg,
+      rgb(164 173 192),
+      rgb(174 183 202)) !important; */
+  background-color: black;
+  overflow: hidden;
+  clip: rect(0, 900px, 0, 0);
+  animation: noise-anim 4s infinite linear alternate-reverse;
+}
+
+.glitch {
+  font-size: 61px;
+  position: relative;
+  width: 371px;
+  margin: 0 auto;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  display: inline-block;
+  border: none;
+  padding: 0.5em 0em;
+  position: absolute;
+  top: 24px;
+  color: white;
+  /* background: linear-gradient(64deg,
+      rgb(164 173 192),
+      rgb(174 183 202)) !important; */
+  background-color: black;
+}
+
+.glitch:before {
+  content: attr(data-text);
+  position: absolute;
+  left: 1px;
+  top: 25px;
+  padding-left: 5px;
+  color: white;
+  /* background: linear-gradient(64deg,
+      rgb(164 173 192),
+      rgb(174 183 202)) !important; */
+  background-color: black;
+  overflow: hidden;
+  clip: rect(0, 900px, 0, 0);
+  animation: noise-anim-2 6s infinite linear alternate-reverse;
+}
+
+.glitch:after {
+  content: attr(data-text);
+  position: absolute;
+  left: 7px;
+  top: 35px;
+  color: white;
+  /* background: linear-gradient(64deg,
+      rgb(164 173 192),
+      rgb(174 183 202)) !important; */
+  background-color: black;
+  overflow: hidden;
+  clip: rect(0, 900px, 0, 0);
+  animation: noise-anim 6s infinite linear alternate-reverse;
+}
+
+@keyframes noise-anim {
+  0% {
+    clip: rect(51px, 9999px, 28px, 0);
+  }
+
+  5% {
+    clip: rect(70px, 9999px, 19px, 0);
+  }
+
+  10% {
+    clip: rect(92px, 9999px, 13px, 0);
+  }
+
+  15% {
+    clip: rect(85px, 9999px, 49px, 0);
+  }
+
+  20% {
+    clip: rect(45px, 9999px, 56px, 0);
+  }
+
+  25% {
+    clip: rect(26px, 9999px, 31px, 0);
+  }
+
+  30% {
+    clip: rect(62px, 9999px, 73px, 0);
+  }
+
+  35% {
+    clip: rect(34px, 9999px, 11px, 0);
+  }
+
+  40% {
+    clip: rect(26px, 9999px, 61px, 0);
+  }
+
+  45% {
+    clip: rect(34px, 9999px, 71px, 0);
+  }
+
+  50% {
+    clip: rect(35px, 9999px, 69px, 0);
+  }
+
+  55% {
+    clip: rect(92px, 9999px, 81px, 0);
+  }
+
+  60% {
+    clip: rect(26px, 9999px, 85px, 0);
+  }
+
+  65% {
+    clip: rect(2px, 9999px, 68px, 0);
+  }
+
+  70% {
+    clip: rect(54px, 9999px, 79px, 0);
+  }
+
+  75% {
+    clip: rect(35px, 9999px, 85px, 0);
+  }
+
+  80% {
+    clip: rect(70px, 9999px, 60px, 0);
+  }
+
+  85% {
+    clip: rect(32px, 9999px, 26px, 0);
+  }
+
+  90% {
+    clip: rect(94px, 9999px, 53px, 0);
+  }
+
+  95% {
+    clip: rect(99px, 9999px, 92px, 0);
+  }
+
+  100% {
+    clip: rect(42px, 9999px, 27px, 0);
+  }
+}
+
+@keyframes noise-anim-2 {
+  0% {
+    clip: rect(21px, 9999px, 49px, 0);
+  }
+
+  5% {
+    clip: rect(27px, 9999px, 52px, 0);
+  }
+
+  10% {
+    clip: rect(21px, 9999px, 70px, 0);
+  }
+
+  15% {
+    clip: rect(65px, 9999px, 25px, 0);
+  }
+
+  20% {
+    clip: rect(24px, 9999px, 10px, 0);
+  }
+
+  25% {
+    clip: rect(61px, 9999px, 64px, 0);
+  }
+
+  30% {
+    clip: rect(34px, 9999px, 47px, 0);
+  }
+
+  35% {
+    clip: rect(46px, 9999px, 93px, 0);
+  }
+
+  40% {
+    clip: rect(46px, 9999px, 9px, 0);
+  }
+
+  45% {
+    clip: rect(67px, 9999px, 36px, 0);
+  }
+
+  50% {
+    clip: rect(72px, 9999px, 20px, 0);
+  }
+
+  55% {
+    clip: rect(79px, 9999px, 26px, 0);
+  }
+
+  60% {
+    clip: rect(13px, 9999px, 87px, 0);
+  }
+
+  65% {
+    clip: rect(10px, 9999px, 25px, 0);
+  }
+
+  70% {
+    clip: rect(85px, 9999px, 11px, 0);
+  }
+
+  75% {
+    clip: rect(94px, 9999px, 35px, 0);
+  }
+
+  80% {
+    clip: rect(50px, 9999px, 86px, 0);
+  }
+
+  85% {
+    clip: rect(74px, 9999px, 67px, 0);
+  }
+
+  90% {
+    clip: rect(1px, 9999px, 40px, 0);
+  }
+
+  95% {
+    clip: rect(3px, 9999px, 48px, 0);
+  }
+
+  100% {
+    clip: rect(90px, 9999px, 23px, 0);
+  }
+}
+
+#titleContainer {
+  padding-left: 35px;
+  margin-top: -40px;
+  text-align: initial;
+  font-size: 89px;
+  color: #883b6e;
+  width: 40%;
+  font-family: "Staatliches", cursive;
+}
+
+.backgroundProffile {
+  background: url(img/marco.png) no-repeat !important;
+}
+
+.imgProfile2 {
+  position: absolute;
+  width: 412px;
+  height: 522px;
+  top: 2.5em;
+  background: url(img/cartoon1.png) no-repeat;
+  background-size: cover;
+}
+
+#guideContainer {
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 60%;
+}
+
+.btnContainer {
+  display: grid;
+  justify-items: end;
+  position: absolute;
+  top: 313px;
+  right: 350px;
+}
+
+.btnGuideContainer {
+  margin-top: 70px;
+  display: flex;
+  transform: none;
+  transition: transform 225ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+ul {
+  list-style: none;
+
+}
+
+.btnGuide {
+  font-family: "Staatliches", cursive !important;
+  font-size: 27px !important;
+  background: linear-gradient(89deg, rgb(94 94 94 / 90%), rgb(0 0 0 / 90%), rgb(0 0 0 / 90%)) !important;
+  margin-bottom: 91px !important;
+  transform: skew(45deg) !important;
+  height: 58px;
+  width: 778px;
+  transition: 0.3s !important;
+  right: -312px;
+  /* top: 101px; */
+}
+
+.btnGuide p {
+  transform: skew(134deg);
+}
+
+.btnGuide:hover {
+  right: -210px;
+  box-shadow: rgba(255, 255, 255, 0.753) -12px 8px 1px -2px !important;
+}
+
+.topicContainer {
+  color: rgb(255, 255, 255);
+  width: 1092px;
+  height: 638px;
+  background: linear-gradient(89deg, rgb(94 94 94 / 90%), rgb(0 0 0 / 90%)) !important;
+  position: absolute;
+  top: -104px;
+  right: -127px;
+  border-radius: 44px 0px 0 44px;
+}
+
+.mainBarTopic {
+  display: flex;
+  padding-left: 30px;
+  padding-top: 18px;
+  justify-content: space-between;
+  width: 92%;
+  height: 75px;
+  font-family: "Staatliches", cursive;
+  align-items: center;
+  align-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.paperInfo {
+  height: 84%;
+  overflow: auto;
+  border-radius: 44px 59px 0 44px !important;
+  background: transparent !important;
+  margin: 0 !important;
+  margin-right: 50px !important;
+  margin-left: 50px !important;
+  box-shadow: none !important;
+}
+
+.topicInfo {
+  color: rgb(255, 255, 255);
+  height: 96%;
+  margin-left: 25px;
+}
+
+.btnExit {
+  color: white !important;
+  width: 3%;
+}
+
+.mainBarTopic p {
+  width: 97%;
+  margin: 0;
+  text-align: center;
+  font-size: 57px !important;
+}
+
+.MuiSvgIcon-root .MuiSvgIcon-fontSizeMedium .css-i4bv87-MuiSvgIcon-root {
+  font-size: 52px;
+}
+
+.colores {
+  color: #52057b;
+  color: #892cdc;
+  color: #bc6ff1;
+}
+
+.css-h100w5 {
+  width: 1138px;
+}
+
+.pageBox {
+  position: absolute;
+  top: 150px;
+  right: 59px;
+}
+
+.css-ha3bif-MuiTimelineItem-root:before {
+  margin-left: 35px;
+  content: none !important;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 6px 16px;
+}
+
+.imgList ul {
+  margin-left: auto;
+  margin-right: auto;
+  justify-items: center !important;
+}
+
+.css-1en9226-MuiImageList-root {
+  display: flex !important;
+  width: 100% !important;
+  height: fit-content !important;
+  flex-wrap: wrap !important;
+  justify-content: center !important;
+  margin-bottom: 70px !important;
+}
+
+.imgList img {
+  object-fit: contain !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.imgList li {
+  /* width: 33%; */
+  padding: 15px;
+  height: 150px !important;
+  max-width: 200px;
+}
+
+.techTitle {
+  width: 100%;
+  font-size: 41px;
+  -webkit-text-stroke: 2px black;
+  color: white;
+  font-style: italic;
+  margin-bottom: 0;
+}
+
+.techTitle:first-child {
+  margin-top: 0;
+}
+
+.btnCV a {
+  text-decoration: none;
+}
+
+.btnCV {
+  border-radius: 50% !important;
+  width: 150px;
+}
+
+/* CONTACT */
+.css-ypiqx9-MuiDialogContent-root {
+  overflow: hidden !important;
+  overflow-y: initial !important;
+  margin-top: 20px;
+}
+
+.contactInfo , .aboutInfo{
+  overflow: hidden;
+}
+
+.imgB2 {
+  width: 100% !important;
+}
+
+.listContact {
+  margin: 0 !important;
+}
+
+.certificates {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.skillList  p{
+margin-top: 8px;
+margin-bottom: 8px;
+}
+
+img {
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.examResult {
+  transition: none;
+
+}
+
+.css-1t1j96h-MuiPaper-root-MuiDialog-paper {
+  overflow: hidden;
+  width: fit-content !important;
+  background: linear-gradient(89deg, rgb(94 94 94 / 90%), rgb(0 0 0 / 90%), rgb(94 94 94 / 90%)) !important;
+  height: -webkit-fill-available !important;
+  max-width: none !important;
+}
+
+.contactItem {
+  margin: 15px !important;
+}
+
+.btnClose {
+  color: white !important;
+}
+
+.css-1rwt2y5-MuiButtonBase-root-MuiButton-root,
+.webProgrammerIcon {
+  max-width: 210px ;
+  max-height: 250px ;
+  border: none !important;
+}
+.webProgrammerIcon {
+  max-width: 150px  !important;
+}
+.imgContact:hover {
+  width: 115% !important;
+  height: 115% !important;
+  margin: -11px !important;
+  box-shadow: inset black;
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.h2SocialMedia {
+  margin: 0 !important;
+}
+
+/*
+EFECTO DE PELICULA BLANCO Y NEGRO 
+.bg-6{
+  position: absolute;
+  top: 35px;
+}
+
+.glitch {
+  color: white;
+  font-size: 70px;
+  position: relative;
+  width: 800px;
+  margin: 0 auto;
+  text-transform: uppercase;
+  background: black;
+  letter-spacing: .1em;
+  display: inline-block;
+  border: none;
+  padding: 0.5em 0em;
+  position: absolute;
+  top: 3%;
+  width: 9em;
+}
+
+ .glitch:after {
+  content: attr(data-text);
+  position: absolute;
+  left: 7px;
+  top: 44px;
+  color: white;
+  background: black;
+  overflow: hidden;
+  clip: rect(0, 900px, 0, 0);
+  animation: noise-anim 6s infinite linear alternate-reverse;
+} 
+
+.glitch:before {
+  content: attr(data-text);
+  position: absolute;
+  left: 1px;
+  top: 46px;
+  padding-left: 5px;
+  color: white;
+  background: black;
+  overflow: hidden;
+  clip: rect(0, 900px, 0, 0);
+  animation: noise-anim-2 6s infinite linear alternate-reverse;
+} */
